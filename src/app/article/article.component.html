@@ -1,0 +1,8 @@
+<div class="container">
+  <h1 [ngStyle]="{ backgroundColor: isTechRelated ? 'blue' : 'yellow' }">Title: {{ title }}</h1>
+  <p *ngIf="isTechRelated === true">Tech Related</p>
+  <ng-template [ngIf]="isTechRelated === false"><p>Not Tech Related</p></ng-template>
+  <button class="btn btn-primary" (click)="onChangeisTechRelated()">Change isTechRelated</button>
+  <hr>
+  <p>{{ content }}: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos odio recusandae magni totam, omnis, voluptatibus corporis culpa a repellendus, pariatur nam. Voluptate ullam quae optio eum iusto totam non adipisci!</p>
+</div>
